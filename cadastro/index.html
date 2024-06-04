@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Cadastro - Iuni Telecom</title>
+  </head>
+  <body>
+    <main class="container">
+      <form
+        method="post"
+        id="preRegistration"
+        class="register"
+        action="javascript:void(0);"
+      >
+        <div class="logo">
+          <img src="/assets/logo.png" alt="Iuni Telecom">
+        </div>
+        <h2 class="title">Dados do Cliente</h2>
+        <label for="nome">Nome Completo</label>
+        <input id="nome" name="nome" type="text" required />
+        <label for="cpfcnpj">CPF ou CNPJ</label>
+        <input name="cpfcnpj" type="text" required />
+        <label for="rg">RG</label>
+        <input name="rg" type="text" required />
+        <label for="email">Email</label>
+        <input name="email" type="email" required />
+        <label for="celular">Celular</label>
+        <input name="celular" type="tel" required />
+        <label for="datanasc">Data de Nascimento</label>
+        <input name="datanasc" type="date" required />
+        <hr />
+        <h2 class="title">Endereço</h2>
+        <label for="cep">CEP</label>
+        <input id="cep" name="cep" type="text" required />
+        <label for="complemento">Complemento</label>
+        <input name="complemento" type="text" required />
+        <label for="numero">Número</label>
+        <input name="numero" type="number" required />
+        <label for="logradouro">Logradouro</label>
+        <input id="logradouro" name="logradouro" type="text" required />
+        <label for="bairro">Bairro</label>
+        <input id="bairro" name="bairro" type="text" required />
+        <label for="cidade">Cidade</label>
+        <input id="cidade" name="cidade" type="text" required />
+        <label for="uf">UF</label>
+        <input id="uf" name="uf" type="text" required />
+        <label for="pais">Pais</label>
+        <input id="pais" name="pais" type="text" required />
+        <!-- <label for="mapa_ll">Mapa</label>
+        <input name="mapa_ll" type="text" required /> -->
+
+        <hr />
+        <h2 class="title">Informações do Plano</h2>
+        <label for="plano_id">Plano</label>
+        <select name="plano_id" id="plano" required>
+          <option value="" selected>Default</option>
+        </select>
+        <label for="vencimento_id">Vencimento</label>
+        <select name="vencimento_id" id="vencimento" required>
+          <option value="" selected>Default</option>
+        </select>
+        <label for="vendedor_id">Vendedor</label>
+        <select name="vendedor_id" id="vendedor" required>
+          <option value="" selected>Default</option>
+        </select>
+
+        <hr />
+        <h2 class="title">Informações adicionais</h2>
+        <fieldset id="pagamento">
+          <legend>Forma de pagamento da taxa de serviço</legend>
+          <label for="">Dinheiro</label>
+          <input id="dinheiro" type="checkbox" value="dinheiro" checked />
+          <label for="">Cartão de Crédito</label>
+          <input id="cartao" type="checkbox" value="cartão" />
+        </fieldset>
+
+        <fieldset id="residencia">
+          <legend>Tipo de Residência</legend>
+          <label for="fixa">Fixa</label>
+          <input id="fixa" type="checkbox" value="fixa" checked />
+          <label for="aluguel">Aluguel</label>
+          <input id="aluguel" type="checkbox" value="aluguel" />
+        </fieldset>
+
+        <label for="">Nome do WI-FI</label>
+        <input id="wifiName" type="text" required />
+        <label for="">Senha do WI-FI</label>
+        <input id="wifiPassword" type="password" required />
+
+        <hr />
+        <button id="buttonSubmit" type="submit">Cadastrar</button>
+      </form>
+    </main>
+
+    <script type="text/javascript" src="./assets/js/postForm.js"></script>
+    <script type="text/javascript" src="./assets/js/getCep.js"></script>
+    <script type="text/javascript" src="./assets/js/getSgpLabels.js"></script>
+    <script type="text/javascript" src="./assets/js/checkbox.js"></script>
+  </body>
+</html>
