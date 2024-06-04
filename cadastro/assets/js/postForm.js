@@ -50,7 +50,7 @@ form.addEventListener("submit", async (event) => {
     const response = await fetch(url + "/precadastro/F", HttpConfig);
     const responseData = await response.json();
     if (response.ok) {
-      alert("Sucesso:", responseData);
+      alert("Cadastro realizado com sucesso.", responseData);
     } else {
       alert("HTTP error:", response.status, responseData);
     }
