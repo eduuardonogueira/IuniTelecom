@@ -17516,14 +17516,13 @@ label {
   position: absolute;
   width: 100%;
   min-height: 100%;
+  background-attachment: fixed !important;
   top: 0;
   left: 0;
   background-size: cover;
   background-position: center;
   overflow: hidden;
-  will-change: transform, opacity, filter;
   -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
   background-repeat: no-repeat;
   z-index: 0;
 }
@@ -18246,3 +18245,27 @@ label {
 -----------------------------------------------*/
 
 /*# sourceMappingURL=theme.css.map */
+
+.ico-sva{
+  justify-content:space-evenly !important;
+}
+.ico-sva img{
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+}
+.auto-atendimento{
+  background-color: #f2f2f2 !important;
+}
+.auto-atendimento-2{
+  display: flex;
+  flex-wrap: wrap;
+}
+.op-atendimento{
+  width: 140px;
+  height: 140px;
+  background-color: #fff;
+  border-radius: 15px;
+  margin: 5px;
+  padding: 2%;
+}
