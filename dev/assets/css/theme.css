@@ -18272,7 +18272,8 @@ label {
   cursor: pointer;
   display: flex;
   flex-direction: column;
-  justify-items: center;
+  justify-items: left;
+  justify-content: left;
 }
 .op-atendimento svg{
   color: #242F51;
