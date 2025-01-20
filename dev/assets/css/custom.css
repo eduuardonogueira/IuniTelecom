@@ -1,4 +1,41 @@
 .home {
-  height: 100dvh;
-  width: 100vw;
+  height: 95dvh;
+  width: 100%;
+  padding: unset;
+  box-sizing: border-box;
+  margin: unset;
+}
+
+.custom-btn {
+  width: 100%;
+}
+
+.carousel-indicators li {
+  border-radius: unset;
+}
+
+.carousel-indicators .active {
+  height: 3px;
+  width: 30px;
+}
+
+.carousel-control-prev {
+  left: 0px;
+}
+
+.carousel-indicators {
+  position: absolute;
+  -webkit-box-pack: center;
+  margin: 0px 15% 1rem 15%;
+  justify-content: center;
+}
+
+.carousel,
+.carousel-inner,
+.carousel-item {
+  height: 100%;
+}
+
+.carousel-item img {
+  object-fit: cover;
 }
